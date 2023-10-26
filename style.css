@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#top{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 10px;
+}
+
+#menu{
+    background-color: #ECECF4;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.btn{
+    border: none;
+    padding: 4px 6px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 16px !important;
+}
+
+#top>.options{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 4px 20px;
+    box-shadow: 2px 2px 6px #E1E1E1;
+}
+
+.library{
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.library>.group{
+    background-color: #6965DB;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+}
+
+.library>.book{
+    border:none;
+    border-radius: 10px;
+    padding: 10px 3px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #ECECF4;
+}
+
+.book:hover{
+    background-color: lightblue;
+} 
+
+#pencil{
+    background-color: #E0DFFF;
+    color: #343287;
+    border-radius: 4px;
+}
+
+#bottom{
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-left{
+    display: flex;
+    gap: 15px;
+}
+
+#bottom>.bottom-left>.zoom-elements{
+    background-color: #ECECF4;
+    border-radius: 4px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#bottom>.bottom-left>.bottom-elements{
+    background-color: #ECECF4;
+    border-radius: 4px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.bottom-right{
+    display: flex;
+    margin-right: 18px;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-right>.verified>.veri{
+    background-color: #6965DB;
+    color: white;
+    border-radius: 4px;
+}
+
+.bottom-right>.help{
+    background-color: #ECECF4;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#canvas{
+    cursor: crosshair;
+}
+
+.btn:hover{
+    background-color: #E0DFFF;
+}
