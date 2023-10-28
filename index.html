@@ -13,18 +13,17 @@
     <div id="root">
         <div id="top">
             <button class="btn material-icons" id="menu">menu</button>
-            <div class="options">
+            <div class="options" id="actionbuttons">
                 <button class="btn material-icons">lock_open</button>
                 <button class="btn material-symbols-outlined">back_hand</button>
                 <button class="btn material-symbols-outlined">arrow_selector_tool</button>
-                <button class="btn material-symbols-outlined">square</button>
-                <button class="btn material-symbols-outlined">circle</button>
-                <button class="btn material-symbols-outlined">trending_flat</button>
-                <button class="btn material-symbols-outlined">horizontal_rule</button>
-                <button class="btn material-icons" id="pencil">edit</button>
+                <button class="btn material-symbols-outlined" id="rectangle" onclick="onActionClick(this)">square</button>
+                <button class="btn material-symbols-outlined" id="circle" onclick="onActionClick(this)">circle</button>
+                <button class="btn material-symbols-outlined" id="line" onclick="onActionClick(this)">horizontal_rule</button>
+                <button class="btn material-icons" id="freehand" onclick="onActionClick(this)">edit</button>
+                <button class="btn material-symbols-outlined" id="eraser" onclick="onActionClick(this)">ink_eraser</button>
                 <button class="btn material-symbols-outlined">text_increase</button>
                 <button class="btn material-symbols-outlined">imagesmode</button>
-                <button class="btn material-symbols-outlined">ink_eraser</button>
             </div>
             <div class="library">
                 <button class="material-symbols-outlined group">group</button>
@@ -41,8 +40,8 @@
                     <button class="btn material-symbols-outlined zoom">add</button>
                 </div>
                 <div class="bottom-elements">
-                    <button class="btn material-symbols-outlined undo">undo</button>
-                    <button class="btn material-symbols-outlined redo">redo</button>
+                    <button class="btn material-symbols-outlined undo" id="undo">undo</button>
+                    <button class="btn material-symbols-outlined redo" id="redo">redo</button>
                 </div>
             </div>
 
@@ -56,8 +55,9 @@
             </div>
         </div>
     </div>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./script.js"></script>
-    <script src="./freehand.js"></script>
+
+    <script src="./drawing.js"></script>
+    <script src="./state.js"></script>
+    <script src="./undo-redo.js"></script>
 </body>
 </html>

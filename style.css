@@ -133,3 +133,9 @@
 .btn:hover{
     background-color: #E0DFFF;
 }
+
+.active{
+    background-color: #343287;
+    border-radius: 4px;
+    color: white;
+}
