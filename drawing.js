@@ -76,10 +76,10 @@ function drawFreeHand(currentPosition){
     historyIndex++;
 }
 
-function drawCircle(currentPosition){
+function drawCircle(currentPosition) {
     c.beginPath();
-    const radius= Math.sqrt((currentPosition.x-initialPosition.x)**2 + (currentPosition.x - initialPosition.y)**2);
-    c.arc(initialPosition.x, initialPosition.y, radius, 0, 2*Math.PI, true);
+    const radius = Math.sqrt((currentPosition.x - initialPosition.x)**2 + (currentPosition.y - initialPosition.y)**2); // Corrected typo here
+    c.arc(initialPosition.x, initialPosition.y, radius, 0, 2 * Math.PI, true);
     c.stroke();
     history.push(c.getImageData(0, 0, canvas.width, canvas.height));
     historyIndex++;
